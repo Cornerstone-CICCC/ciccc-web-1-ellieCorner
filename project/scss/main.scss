@@ -21,3 +21,7 @@ main {
     }
   }
 }
+
+button {
+  @include mixins.button-style(variables.$secondary-color);
+}

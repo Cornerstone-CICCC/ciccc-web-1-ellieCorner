@@ -3,3 +3,18 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin button-style($bg-color: variables.$primary-color, $text-color: white) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
